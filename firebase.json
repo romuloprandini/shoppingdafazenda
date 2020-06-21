@@ -11,7 +11,20 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png)",
+        "headers": [ {
+          "key": "Cache-Control",
+          "value": "max-age=7200"
+        }]
+      }
+    ],
     "rewrites": [
+      {
+        "source": "/contact",
+        "function": "contactForm"
+      },
       {
         "source": "**",
         "destination": "/index.html"
