@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import SliderImage from "./SliderImage";
-import BackArrow from "./BackArrow";
-import NextArrow from "./NextArrow";
+import BackArrow from "../Shared/BackArrow";
+import NextArrow from "../Shared/NextArrow";
 
 class Slider extends Component {
   state = {

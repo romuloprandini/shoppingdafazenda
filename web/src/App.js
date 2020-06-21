@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Slider from "./components/Slider/Slider";
 import Section from "./components/Shared/Section";
 import Products from "./components/Products/Products";
+import Gallery from "./components/Gallery/Gallery";
 
 import "./tailwind.generated.css";
 
@@ -34,6 +35,7 @@ class App extends Component {
       openingDayHours,
       slider,
       products,
+      gallery,
     } = this.state.data;
 
     return (
@@ -51,6 +53,8 @@ class App extends Component {
           subtitle="Temos o orgulho em dizer que nossos produtos são todos caseiros e vem direto da fazenda, livre de agrotóxicos, conservantes e aditivos."
         />
         <Products products={products} />
+        <Section id="galery" title="GALERIA" />
+        <Gallery images={gallery} />
       </div>
     );
   }
