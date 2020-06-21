@@ -5,9 +5,19 @@
   height: 70px;
 }
 
+.h-320px {
+  height: 320px;
+}
+
 @media (min-width: 768px) {
   .md\:h-150px {
     height: 150px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:h-640px {
+    height: 640px;
   }
 }
 

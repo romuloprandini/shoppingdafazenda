@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Header from "./components/Header/Header";
+import Slider from "./components/Slider/Slider";
 
 import "./tailwind.generated.css";
 
@@ -28,7 +29,8 @@ class App extends Component {
       phone,
       email,
       address,
-      openingDayHours
+      openingDayHours,
+      slider,
     } = this.state.data;
 
     return (
@@ -39,6 +41,7 @@ class App extends Component {
           address={address}
           openingDayHours={openingDayHours}
         />
+        <Slider imgs={slider} imageStyle={{ objectPosition: "50% 22%" }} />
       </div>
     );
   }
