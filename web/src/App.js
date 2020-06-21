@@ -5,6 +5,7 @@ import Slider from "./components/Slider/Slider";
 import Section from "./components/Shared/Section";
 import Products from "./components/Products/Products";
 import Gallery from "./components/Gallery/Gallery";
+import Location from "./components/Location/Location";
 
 import "./tailwind.generated.css";
 
@@ -55,6 +56,18 @@ class App extends Component {
         <Products products={products} />
         <Section id="galery" title="GALERIA" />
         <Gallery images={gallery} />
+        <Section id="location" title="LOCALIZAÇÃO" />
+        <Location
+          zoom={18}
+          center={address.position}
+          popupText={
+            <div>
+              {address.lines.map((line, i) => (
+                <div key={i}>{line}</div>
+              ))}
+            </div>
+          }
+        />
       </div>
     );
   }

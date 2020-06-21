@@ -25,6 +25,10 @@
   right: 25px;
 }
 
+.location-map * {
+  z-index: 10 !important;
+}
+
 @media (min-width: 640px) {
   .product-panel:hover {
     @apply transition duration-300 ease-in-out shadow-md;
@@ -42,6 +46,9 @@
 }
 
 @media (min-width: 1024px) {
+  .lg\:h-520px {
+    height: 520px;
+  }
   .lg\:h-640px {
     height: 640px;
   }
