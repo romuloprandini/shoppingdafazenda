@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import Header from "./components/Header/Header";
 import Slider from "./components/Slider/Slider";
+import Section from "./components/Shared/Section";
+import Products from "./components/Products/Products";
 
 import "./tailwind.generated.css";
 
@@ -31,6 +33,7 @@ class App extends Component {
       address,
       openingDayHours,
       slider,
+      products,
     } = this.state.data;
 
     return (
@@ -42,6 +45,12 @@ class App extends Component {
           openingDayHours={openingDayHours}
         />
         <Slider imgs={slider} imageStyle={{ objectPosition: "50% 22%" }} />
+        <Section
+          id="products"
+          title="NOSSOS PRODUTOS"
+          subtitle="Temos o orgulho em dizer que nossos produtos são todos caseiros e vem direto da fazenda, livre de agrotóxicos, conservantes e aditivos."
+        />
+        <Products products={products} />
       </div>
     );
   }
