@@ -1,0 +1,85 @@
+{
+  "phone": "+5565981123109",
+  "email": "contato@shoppingdafazenda.com",
+  "address": {
+    "lines": [
+      "Av. Presidente Artur Bernardes, 630",
+      "Vila Ipase, Várzea Grande - MT",
+      "78125-100"
+    ],
+    "position": [-15.65793,-56.12321]
+  },
+  "openingDayHours": [
+    "Segunda - Sábado 08:00 - 19:00",
+    "Domingo - 08:00 - 12:00"
+  ],
+  "slider": [
+    { "id": 1, "src": "imgs/main.jpg", "caption": "Main" },
+    { "id": 2, "src": "imgs/main-2.jpg", "caption": "Main 2" },
+    { "id": 3, "src": "imgs/main-3.jpg", "caption": "Main 3" }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "image": "imgs/product-1.jpg",
+      "thumbnail": "imgs/thumbnail/product-1.jpg",
+      "title": "Pururuca",
+      "description": "O verdadeiro torresmo pururuca, super crocante e sequinho. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+    },
+    {
+      "id": 2,
+      "image": "imgs/product-2-1.jpg",
+      "thumbnail": "imgs/thumbnail/product-2-1.jpg",
+      "title": "Doces Caseiros",
+      "description": "Aqui você encontra os principais doces caseiros, como o Furrundú, Doce de Leite, Doce de Caju, Dode de Abóbora, Figo entre vários outros."
+    },
+    {
+      "id": 3,
+      "image": "imgs/product-7.jpg",
+      "thumbnail": "imgs/thumbnail/product-7.jpg",
+      "title": "Salames",
+      "description": "Aqui você encontra vários tipos salames artesanais"
+    },
+    {
+      "id": 4,
+      "image": "imgs/product-3.jpg",
+      "thumbnail": "imgs/thumbnail/product-3.jpg",
+      "title": "Pimentas",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis lectus id egestas venenatis. Vestibulum eu lacinia justo. Suspendisse aliquam ante just"
+    },
+    {
+      "id": 5,
+      "image": "imgs/product-4.jpg",
+      "thumbnail": "imgs/thumbnail/product-4.jpg",
+      "title": "Outro Produto",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis lectus id egestas venenatis."
+    },
+    {
+      "id": 6,
+      "image": "imgs/product-5.jpg",
+      "thumbnail": "imgs/thumbnail/product-5.jpg",
+      "title": "Outro Produto",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis lectus id egestas venenatis. Vestibulum eu lacinia justo. Suspendisse aliquam ante just"
+    },
+    {
+      "id": 7,
+      "image": "imgs/product-6.jpg",
+      "thumbnail": "imgs/thumbnail/product-6.jpg",
+      "title": "Outro Produto",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis lectus id egestas venenatis. Vestibulum eu lacinia justo. Suspendisse aliquam ante just"
+    }
+  ],
+  "gallery": [
+    { "id": 1, "src": "imgs/main.jpg", "thumbnail": "imgs/thumbnail/main.jpg", "caption": "Main" },
+    { "id": 2, "src": "imgs/main-2.jpg", "thumbnail": "imgs/thumbnail/main-2.jpg", "caption": "Main" },
+    { "id": 3, "src": "imgs/main-3.jpg", "thumbnail": "imgs/thumbnail/main-3.jpg", "caption": "Main" },
+    { "id": 4, "src": "imgs/profile.jpg", "thumbnail": "imgs/thumbnail/profile.jpg", "caption": "Main" },
+    { "id": 5, "src": "imgs/product-1.jpg", "thumbnail": "imgs/thumbnail/product-1.jpg", "caption": "Main" },
+    { "id": 6, "src": "imgs/product-2.jpg", "thumbnail": "imgs/thumbnail/product-2.jpg", "caption": "Main" },
+    { "id": 7, "src": "imgs/product-2-1.jpg", "thumbnail": "imgs/thumbnail/product-2-1.jpg", "caption": "Main" },
+    { "id": 8, "src": "imgs/product-7.jpg", "thumbnail": "imgs/thumbnail/product-7.jpg", "caption": "Main" },
+    { "id": 9, "src": "imgs/product-3.jpg", "thumbnail": "imgs/thumbnail/product-3.jpg", "caption": "Main" },
+    { "id": 10, "src": "imgs/product-4.jpg", "thumbnail": "imgs/thumbnail/product-4.jpg", "caption": "Main" },
+    { "id": 11, "src": "imgs/product-5.jpg", "thumbnail": "imgs/thumbnail/product-5.jpg", "caption": "Main" }
+  ]
+}

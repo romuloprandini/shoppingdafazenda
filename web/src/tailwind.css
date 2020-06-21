@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+
+.h-70px {
+  height: 70px;
+}
+
+@media (min-width: 768px) {
+  .md\:h-150px {
+    height: 150px;
+  }
+}
+
+@tailwind utilities;

@@ -1,3 +1,6 @@
+src/*.generated.css
+build/
+
 # Logs
 logs
 *.log
@@ -68,6 +71,12 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+# Yarn 2
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
+
 # dotenv environment variables file
 .env
 .env.test
@@ -103,8 +112,4 @@ dist
 # TernJS port file
 .tern-port
 
-# Firebase environment/properties
-.firebaserc
-.firebase
-
-*/.vscode
+.directory
