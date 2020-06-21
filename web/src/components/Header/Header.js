@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+import { Link, animateScroll as scroll } from "react-scroll";
 import Icon from "@mdi/react";
 import { mdiHome } from "@mdi/js";
 import ContactInfo from "../Shared/ContactInfo";
@@ -21,7 +22,9 @@ render() {
       <nav
         className="h-70px fixed w-full flex items-center justify-between flex-wrap bg-gray-900 px-1 sm:px-6 z-20">
         <div
-          className="flex items-center flex-shrink-0 text-white mr-6 p-2">
+          className="flex items-center flex-shrink-0 text-white mr-6 p-2 cursor-pointer"
+          onClick={() => scroll.scrollToTop()}
+        >
           <Icon
             path={mdiHome}
             size={1.5}
@@ -44,21 +47,22 @@ render() {
             </svg>
           </button>
         </div>
+        
         <div className="w-full block flex-grow md:flex md:items-center md:w-auto block hidden md:show">
           <div className="lg:flex-grow inline-flex text-sm">
-            {this.anchorLinks("Produtos")}
-            {this.anchorLinks("Galeria")}
-            {this.anchorLinks("Localização")}
-            {this.anchorLinks("Contato")}
+            {this.anchorLinks("Produtos", "products")}
+            {this.anchorLinks("Galeria", "galery")}
+            {this.anchorLinks("Localização", "location")}
+            {this.anchorLinks("Contato", "contact")}
           </div>
         </div>
       </nav>
       
       <div className={`w-full fixed flex flex-col z-20 ${this.state.showMenu ? "" : "hidden"}`} style={{top: "70px"}}>
-        {this.anchorLinks("Produtos", true)}
-        {this.anchorLinks("Galeria", true)}
-        {this.anchorLinks("Localização", true)}
-        {this.anchorLinks("Contato", true)}
+        {this.anchorLinks("Produtos", "products", true)}
+        {this.anchorLinks("Galeria", "galery", true)}
+        {this.anchorLinks("Localização", "location", true)}
+        {this.anchorLinks("Contato", "contact", true)}
       </div>
       <div  className="hidden md:block h-full" style={{paddingTop: "70px"}}>
       <ContactInfo
@@ -81,17 +85,25 @@ toggleMenu = (status) => {
   }
 }
 
-anchorLinks = (name, horizontal) => {
+anchorLinks = (name, targetId, horizontal) => {
 
-  const className = `bg-gray-900 text-gray-200 font-bold ${horizontal ? "py-3 pl-5" : "hover:bg-purple-900 px-4 py-6"}`;
-  const activeClass = `bg-purple-900 text-gray-200 font-bold ${horizontal ? "py-3 pl-5" : ""}`;
+  const className = `bg-gray-900 text-gray-200 font-bold cursor-pointer ${horizontal ? "py-3 pl-5" : "hover:bg-purple-900 px-4 py-6"}`;
+  const activeClass = `bg-purple-900 text-gray-200 font-bold cursor-pointer${horizontal ? "py-3 pl-5" : ""}`;
 
   return (
-    <a className={`bg-gray-900 text-gray-200 font-bold ${horizontal ? "py-3 pl-5" : "hover:bg-purple-900 px-4 py-6"}`}
+    <Link
+      activeClass={activeClass}
+      to={targetId}
+      smooth={true}
+      isDynamic={true}
+      offset={-50}
+      duration={500}
+      spy={true}
+      className={className}
       onClick={()=> this.toggleMenu(false)}
     >
       {name}
-    </a>
+    </Link>
   );
 }
 }
