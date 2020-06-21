@@ -10,12 +10,15 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "autoprefixer": "^9.7.6",
+    "leaflet": "^1.6.0",
     "postcss-cli": "^7.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-leaflet": "^2.7.0",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.7.16",
+    "react-transition-group": "1.x",
     "tailwindcss": "^1.4.4"
   },
   "scripts": {

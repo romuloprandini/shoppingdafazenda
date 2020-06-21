@@ -86,7 +86,7 @@ class App extends Component {
           title="CONTATO"
           subtitle="Caso tenha alguma dúvida ou sugestão, entre em contato conosco através do formulário dos informações abaixo:"
         />
-        <Contact />
+        <Contact notification={{show: this.showNotification}} />
         <div className="mt-20">
           <Footer
             phone={phone}
