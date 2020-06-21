@@ -54,4 +54,23 @@
   }
 }
 
+.example-enter {
+  transform: translate3d(120%, 0, 0);
+}
+
+.example-enter.example-enter-active {
+  transform: translate3d(0,0,0);
+  transition: transform 300ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transform: translate3d(120%, 0, 0);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
 @tailwind utilities;
